@@ -27,6 +27,7 @@ body {
 }
 
 .section-description {
+    box-sizing: border-box;
     color: rgba(0, 0, 0, 0.5);
     font-size: 1.4rem;
 }
@@ -116,7 +117,7 @@ nav {
     box-sizing: border-box;
 }
 .plants-lover-text ul {
-    padding-left: 20px;
+        padding-left: 20px;
 }
 .plants-lover-text ul li {
     padding-top: 20px;
@@ -127,13 +128,21 @@ nav {
     box-sizing: border-box;
     text-align: center;
     background-image: url(./assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
     padding: 200px 300px;
 }
 .join h3 {
     color: #FFFFFF;
 }
+.join form {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+}
 .email {
-    width: 600px;
+    width: 550px;
     height: 32px;
     padding: 8px 20px;
 }
@@ -153,6 +162,10 @@ nav {
     .container {
         margin: auto 16px;
     }
+    .section-description {
+        font-size: 0.8rem;
+        max-width: 360px;
+    }
     .nav-link {
         display: none;
     }
@@ -160,6 +173,9 @@ nav {
         flex-direction: column-reverse;
         padding-top: 25px;
         margin: 0;
+    }
+    .banner-title {
+        font-size: 1.5rem;
     }
     .banner-left {
          margin: 20px 16px;
@@ -172,13 +188,14 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     align-content: center;
+    gap: 5px;
     }
     .plants-card {
     max-width: 171px;
     }
     .card-title, .card-price {
     font-size: 1rem;
-    margin: 10px;
+    margin: 5px;
     }
 
     .primary-btn {
@@ -189,18 +206,29 @@ nav {
         flex-direction: column;
     }
     .plants-lover-text, .plants-lover img {
-        width: 100%;        
+        max-width: 350px;        
     }
     
 
     .join {
-    padding: 110px 36px 61px;
+    width: 100%;
+    text-align: center;
+    padding: 110px 15px 61px;
+    }
+    .join h3 {
+    font-size: 1.2rem;
+    }
+    .join form {
+        margin: 0;
+        width: 90%;
+        align-self: center;
     }
     .email {
-    width: 218px;
+    width: 40%;
     }
     .subscribe-btn {    
-    width: 100px;
+    width: 25%;
+    padding: 10px 5px;
     }
 
    
