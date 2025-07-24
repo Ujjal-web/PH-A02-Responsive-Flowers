@@ -16,7 +16,13 @@ body {
     color: #8987A1;
 
 }
-
+.title-color {
+    color: #E95A08;
+}
+.section-description {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.4rem;
+}
 /* header styles */
 nav {
     display: flex;
@@ -36,3 +42,22 @@ nav {
     color: #252432;
     font-weight: bold;
 }
+
+.banner {
+    display: flex;
+    align-items:flex-end;
+    margin: 90px auto;
+    padding-top: 100px;
+}
+.banner-left, .banner-right {
+    max-width: 50%;
+}
+
+.banner-title {
+    font-family: "Noto Serif", serif;
+    font-size: 4rem;
+    margin-bottom: 13px;
+
+}
+
+
